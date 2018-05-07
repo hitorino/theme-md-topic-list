@@ -1,0 +1,37 @@
+.post-card {
+    margin: auto;
+    padding: 16px;
+    width: 355px;
+    height: auto;
+    box-shadow: unset;
+    border-top: 1px solid #eee;
+    box-sizing: border-box;
+    .post-card-head {
+        .head-detail {
+            .post-title {
+                a.title {
+                    max-width: 260px !important;
+                }
+            }
+        }
+    }
+    .post-footer {
+        button {
+            svg {
+                margin: 0 4px 0 0;
+                width: 20px;
+                height: 20px;
+            }
+            span.number {
+                margin: 0 4px;
+            }
+        }
+        .post-like,
+        .post-bookmark {
+            &.active-animation::after {
+                top: -10px;
+                left: -10px;
+            }
+        }
+    }
+}
