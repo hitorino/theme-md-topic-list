@@ -80,6 +80,7 @@
         div.discourse-tags {
           display: flex;
           display: -webkit-flex;
+          margin: 0;
           a {
             margin-right: 14px;
             padding: 0 6px;
@@ -119,7 +120,7 @@
       display: flex;
       display: -webkit-flex;
       padding: 0;
-      width: 96px;
+      width: 104px;
       align-items: center;
       -webkit-align-items: center;
       &.disabled {
@@ -128,7 +129,7 @@
       svg {
         width: 24px;
         height: 24px;
-        margin: 0 8px;
+        margin: 0 16px 0 0;
         flex-shrink: 0;
       }
       span.number {
@@ -203,4 +204,3 @@
     }
   }
 }
-

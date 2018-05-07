@@ -1,7 +1,7 @@
 .post-card {
-    margin: auto;
+    margin: 0;
     padding: 16px;
-    width: 355px;
+    width: 100vw;
     height: auto;
     box-shadow: unset;
     border-top: 1px solid #eee;
@@ -17,6 +17,11 @@
     }
     .post-footer {
         button {
+            flex-shrink: 0;
+            -webkit-flex-shrink: 0;
+            width: 72px;
+            height: 20px;
+            line-height: 20px;
             svg {
                 margin: 0 4px 0 0;
                 width: 20px;
@@ -32,6 +37,14 @@
                 top: -10px;
                 left: -10px;
             }
+        }
+        .post-bookmark {
+            width: 24px;
+        }
+        .post-activity {
+            flex-grow: 1;
+            -webkit-flex-grow: 1;
+            text-align: right;
         }
     }
 }
