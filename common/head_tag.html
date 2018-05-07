@@ -97,7 +97,7 @@
             <span>
         </div>
         {{#if topic.hasExcerpt}}
-        <div class="post-body">{{topic.excerpt}}</div>
+        <div class="post-body">{{replace-emoji topic.excerpt}}</div>
         {{/if}}
         <div class="post-footer">
             <button class="post-views widget-button btn-flat">
